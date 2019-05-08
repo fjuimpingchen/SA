@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+<!-- 連結CSS -->
+  <link rel="stylesheet" href="/Users/huangpingchen/Desktop/SA/commet.css" />
+
+<!--JQuery-->
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+  <form class="registration" method="post">
+  <h3>107學年度 第二學期</h3>
+  <h3>課程名稱：系統分析與設計</h3>
+  <h3>授課教師：吳濟聰</h3>
+
+
+  <label class="pure-material-textfield-outlined">
+     <input placeholder=" " type="email" required>
+      <span>Email</span>
+  </label>
+
+  <label class="pure-material-textfield-outlined">
+    <input placeholder=" " type="password" required>
+    <span>Password</span>
+  </label>
+
+  <label class="pure-material-radio">
+    <input type="radio" name="type" required>
+    <span>Personal Account</span>
+  </label>
+
+  <label class="pure-material-radio">
+    <input type="radio" name="type" required>
+    <span>Business Account</span>
+  </label>
+
+  <label class="pure-material-checkbox">
+    <input type="checkbox" required>
+    <span>I agree to the <a href="https://codepen.io/collection/nZKBZe/" target="_blank" title="Actually not a Terms of Service">Terms of Service</a></span>
+  </label>
+
+  <button class="pure-material-button-contained" type="submit">Sign Up</button>
+
+  <div class="done">
+    <h1>👌 You're all set!</h1>
+    <a class="pure-material-button-text" href="javascript:window.location.reload(true)">Again</a>
+  </div>
+  <div class="progress">
+    <progress class="pure-material-progress-circular" />
+  </div>
+</form>
+
+<div class="left-footer">
+  Created by Ben Szabo (finnhvman)<br/>
+  <a href="https://twitter.com/finnhvman" target="_top">Twitter</a> &nbsp; | &nbsp;
+  <a href="https://www.linkedin.com/in/finnhvman/" target="_top">LinkedIn</a> &nbsp; | &nbsp;
+  <a href="https://codepen.io/finnhvman/" target="_top">CodePen</a>
+</div>
+<div class="right-footer">
+  Check out<br/>
+  <a href="https://github.com/finnhvman/matter" target="_top">Matter (Pure CSS Material)</a>
+</div>
+
+
+<script>
+
+
+var form = document.querySelector('form');
+form.onsubmit = function (event) {
+    event.preventDefault();
+    form.classList.add('signed');
+};
+
+
+
+
+</script>
+
+</body>
+</html>

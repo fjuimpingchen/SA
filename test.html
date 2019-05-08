@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<!-- 連結CSS -->
+  <link rel="stylesheet" href="/Users/huangpingchen/Desktop/SA/star_rating.css" />
+
+<!-- FontAwesome_CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+<!-- bootstrap_CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+<!--JQuery-->
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- MintCDN -->
+<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
+
+
+
+<body>
+
+
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">選課系統</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">王小明</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">登出</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <div style="margin-top:50px;margin-right:200px;margin-bottom:100px;margin-left:200px;">
+
+
+  <form>
+  <fieldset>
+    <legend>撰寫評論</legend>
+
+    <div class="form-group">
+      <img src="/Users/huangpingchen/Desktop/SA/183748.svg" width="100" height="100" style="margin-top:-30px">
+      <label for="exampleInputEmail1" style="margin-top:10px">
+        &nbsp;&nbsp;&nbsp;&nbsp107學年度&nbsp;&nbsp;&nbsp;&nbsp;第2學期<br>&nbsp;&nbsp;&nbsp;&nbsp課程名稱：系統分析與設計<br>&nbsp;&nbsp;&nbsp;&nbsp授課教師：吳濟聰
+      </label>
+
+
+      <div class="form-check">
+        <label class="form-check-label" style="margin-top:20px">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked="">公開&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2" checked="">非公開&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;
+          <img src="/Users/huangpingchen/Desktop/SA/666201.png" width="30" height="30">
+          <label>系級：資訊管理學系 2年級&nbsp;&nbsp;&nbsp;姓名：王小明</label>
+        </label>
+      </div>
+
+<!-- 星級評論（推薦度） -->
+      <div class="form-group" style="margin-top:20px">
+        <label>課程推薦度：</label>
+        <div class="page">
+          <div class="page__demo">
+            <div class="page__group">
+              <div class="rating">
+                <input type="radio" name="rating-star" class="rating__control" id="rc1_2">
+                <input type="radio" name="rating-star" class="rating__control" id="rc2_2">
+                <input type="radio" name="rating-star" class="rating__control" id="rc3_2">
+                <input type="radio" name="rating-star" class="rating__control" id="rc4_2">
+                <input type="radio" name="rating-star" class="rating__control" id="rc5_2">
+                <label for="rc1_2" class="rating__item">
+                  <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                  </svg>
+                  <span class="rating__label">1</span>
+                </label>
+                <label for="rc2_2" class="rating__item">
+                  <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                  </svg>
+                  <span class="rating__label">2</span>
+                </label>
+                <label for="rc3_2" class="rating__item">
+                  <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                  </svg>
+                  <span class="rating__label">3</span>
+                </label>
+                <label for="rc4_2" class="rating__item">
+                  <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                  </svg>
+                  <span class="rating__label">4</span>
+                </label>
+                <label for="rc5_2" class="rating__item">
+                  <svg class="rating__star">
+                    <use xlink:href="#star"></use>
+                  </svg>
+                  <span class="rating__label">5</span>
+                </label>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+          <symbol id="star" viewBox="0 0 26 28">
+            <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"/>
+          </symbol>
+        </svg>
+      </div>
+
+
+      <!-- 星級評論（及格難度） -->
+            <div class="form-group" style="margin-top:20px">
+              <label>課程及格難度：</label>
+              <div class="page">
+                <div class="page__demo">
+                  <div class="page__group">
+                    <div class="rating">
+                      <input type="radio" name="rating-star" class="rating__control" id="rc1">
+                      <input type="radio" name="rating-star" class="rating__control" id="rc2">
+                      <input type="radio" name="rating-star" class="rating__control" id="rc3">
+                      <input type="radio" name="rating-star" class="rating__control" id="rc4">
+                      <input type="radio" name="rating-star" class="rating__control" id="rc5">
+                      <label for="rc1" class="rating__item">
+                        <svg class="rating__star">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <span class="rating__label">1</span>
+                      </label>
+                      <label for="rc2" class="rating__item">
+                        <svg class="rating__star">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <span class="rating__label">2</span>
+                      </label>
+                      <label for="rc3" class="rating__item">
+                        <svg class="rating__star">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <span class="rating__label">3</span>
+                      </label>
+                      <label for="rc4" class="rating__item">
+                        <svg class="rating__star">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <span class="rating__label">4</span>
+                      </label>
+                      <label for="rc5" class="rating__item">
+                        <svg class="rating__star">
+                          <use xlink:href="#star"></use>
+                        </svg>
+                        <span class="rating__label">5</span>
+                      </label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+                <symbol id="star" viewBox="0 0 26 28">
+                  <path d="M26 10.109c0 .281-.203.547-.406.75l-5.672 5.531 1.344 7.812c.016.109.016.203.016.313 0 .406-.187.781-.641.781a1.27 1.27 0 0 1-.625-.187L13 21.422l-7.016 3.687c-.203.109-.406.187-.625.187-.453 0-.656-.375-.656-.781 0-.109.016-.203.031-.313l1.344-7.812L.39 10.859c-.187-.203-.391-.469-.391-.75 0-.469.484-.656.875-.719l7.844-1.141 3.516-7.109c.141-.297.406-.641.766-.641s.625.344.766.641l3.516 7.109 7.844 1.141c.375.063.875.25.875.719z"/>
+                </symbol>
+              </svg>
+            </div>
+
+
+    <div class="form-group">
+      <label for="exampleTextarea" style="margin-top:20px">評論內容（文字不得少於10字）：</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+
+
+    <button type="button" class="btn btn-primary" onclick="window.location='list_modify.html'" style="position: absolute;
+  	left: 1180px">發布</button>
+    </fieldset>
+</form>
+
+</div>
+
+</body>
+</html>

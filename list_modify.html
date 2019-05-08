@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<!-- 連結CSS -->
+  <link rel="stylesheet" href="/Users/huangpingchen/Desktop/SA/star_rating.css" />
+
+<!-- FontAwesome_CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+<!-- bootstrap_CDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+
+<!--JQuery-->
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<!-- MintCDN -->
+<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/minty/bootstrap.min.css" rel="stylesheet" integrity="sha384-9NlqO4dP5KfioUGS568UFwM3lbWf3Uj3Qb7FBHuIuhLoDp3ZgAqPE1/MYLEBPZYM" crossorigin="anonymous">
+
+<!-- 彈出視窗 -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<body>
+
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">選課系統</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#"> <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">王小明</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">登出</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"></a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+  <table class="table table-hover" style="width:72%;margin-top:50px;margin-right:200px;margin-left:200px;" >
+  <thead>
+    <tr>
+      <th scope="col">課程名稱</th>
+      <th scope="col">教師</th>
+      <th scope="col">學年</th>
+      <th scope="col">學期</th>
+        <th scope="col">撰寫評論</th>
+
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <th scope="row">資料結構</th>
+      <td>蔡幸蓁</td>
+      <td>108學年</td>
+      <td>2</td>
+        <td><button type="button" class="btn btn-secondary">評論</button></td>
+    <tr class="table-primary">
+      <th scope="row">系統分析與設計</th>
+      <td>吳濟聰</td>
+      <td>108學年</td>
+      <td>2</td>
+      <td><button type="button" class="btn btn-warning" onclick="window.location='test.html'">修改</button>
+      <button type="button" class="btn btn-danger" onclick="myFunction()">刪除</button></td>
+
+      <script>
+      function myFunction() {
+        var txt;
+        if (confirm("確定刪除？")) {
+          // <button type="button" name="button" onclick="window.location='list.html'"></button> ;
+        } else {
+        }
+        document.getElementById("demo").innerHTML = txt;
+        }
+      </script>
+
+    </tr>
+    <tr>
+      <th scope="row">電子商務</th>
+      <td>廖建翔</td>
+      <td>108學年</td>
+      <td>2</td>
+        <td><button type="button" class="btn btn-secondary">評論</button></td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">統計學</th>
+      <td>李俊民</td>
+      <td>108學年</td>
+      <td>2</td>
+        <td><button type="button" class="btn btn-secondary">評論</button></td>
+    </tr>
+
+  </tbody>
+</table>
+
+</body>
+</html>
